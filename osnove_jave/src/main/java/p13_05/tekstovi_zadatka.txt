@@ -1,2 +1,2 @@
 Kreirati novi fajl u paketu sa danasnjeg predavanja. Fajl se zove tekstovi_zadataka.txt i u njemu pejstujte tekst sa ovog zadataka.
-dfdfdfdf
+dfdfdfdfsdfsdfsd
