@@ -37,8 +37,7 @@ public class Zadatak5 {
                 return uporedi = true;
             }
 
-
         }
-        return uporedi;
+        return false;
     }
 }
