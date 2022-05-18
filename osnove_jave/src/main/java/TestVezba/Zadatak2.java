@@ -5,7 +5,7 @@ import java.util.*;
 public class Zadatak2 {
     public static void main(String[] args) {
         List<String> lst = new ArrayList<>();
-        lst.addAll(Arrays.asList( "ITBootcamp - Besplatna IT prekvalifikacija - Free IT Bootcamp ...",
+        lst.addAll(Arrays.asList("ITBootcamp - Besplatna IT prekvalifikacija - Free IT Bootcamp ...",
                 "Prijava - Beograd - ITBootcamp",
                 "IT Bootcamp kursevi",
                 "IT Bootcamp - Education - Belgrade, Serbia - 1 Review - 342 ...",
@@ -48,10 +48,10 @@ public class Zadatak2 {
         int strana = s.nextInt();
         System.out.println("Broj rezultata po strani ");
         int brojRezultata = s.nextInt();
-        for (int i = (strana + 1); i < (strana + brojRezultata+1); i++) {
+        for (int i = (strana * brojRezultata - brojRezultata); i < (strana * brojRezultata); i++) {
             System.out.println(lst.get(i));
         }
     }
 
-    }
+}
 
