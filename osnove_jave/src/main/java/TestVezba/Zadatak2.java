@@ -48,7 +48,7 @@ public class Zadatak2 {
         int strana = s.nextInt();
         System.out.println("Broj rezultata po strani ");
         int brojRezultata = s.nextInt();
-        for (int i = (strana + 1); i < (strana + brojRezultata); i++) {
+        for (int i = (strana + 1); i < (strana + brojRezultata+1); i++) {
             System.out.println(lst.get(i));
         }
     }
