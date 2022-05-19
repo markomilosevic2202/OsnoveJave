@@ -7,8 +7,6 @@ import java.util.*;
 
 public class Zadatak5 {
     public static void main(String[] args) {
-
-
         List<Integer> igrano = new ArrayList<>();
         igrano.addAll(Arrays.asList(1, 2, 3, 45, 31, 12, 5));
         List<Integer> izvuceno = new ArrayList<>();
