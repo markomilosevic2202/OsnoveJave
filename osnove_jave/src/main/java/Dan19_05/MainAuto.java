@@ -9,9 +9,26 @@ public class MainAuto {
         seat.brojVrata = 5;
         seat.potrosnja = 7;
         seat.brzina = 120;
-        seat.stampa();
-        System.out.println();
+        seat.mesecRegistracije = 5;
+        seat.kubikaza = 1800;
+        seat.godinaProizvodnje = 1948;
+        seat.trenutnaKolicinaGoriva = 58;
+        seat.kapacitetRezervuara = 60;
 
+        seat.stampa();
+        if (seat.oldTimer())
+            System.out.println("Auto je old timer");
+        else {
+            System.out.println("Auto nije oldtimer");
+        }
+        if (seat.idteklaRegistracija(6))
+            System.out.println("Auto je registrovan");
+        else {
+            System.out.println("Auto registrovan");
+        }
+        System.out.println("Cena registracije: " + seat.cenaRegistracije());
+        System.out.println("Cena goriva je: " + seat.natociGorivo(5));
+        System.out.println();
         Auto fica = new Auto();
         fica.ime = "Mile";
         fica.prezime = "Lojpur";
@@ -19,6 +36,11 @@ public class MainAuto {
         fica.brojVrata = 2;
         fica.potrosnja = 8;
         fica.brzina = 90;
+        fica.mesecRegistracije = 5;
+        fica.kubikaza = 1500;
+        fica.godinaProizvodnje = 1968;
+        fica.trenutnaKolicinaGoriva = 30;
+        fica.kapacitetRezervuara = 60;
         fica.stampa();
 
         System.out.println(fica.prekoracenje(100));
@@ -28,5 +50,19 @@ public class MainAuto {
         fica.smanji();
         System.out.println("Trenutna brzina je: " + fica.brzina);
         System.out.println("Trenutna potrosnja je: " + fica.trenutnaPotrosnja());
+        if (fica.oldTimer())
+            System.out.println("Auto je old timer");
+        else {
+            System.out.println("Auto nije oldtimer");
+        }
+        if (fica.idteklaRegistracija(3))
+            System.out.println("Auto je registrovan");
+        else {
+            System.out.println("Auto registrovan");
+        }
+
+        System.out.println("Cena registracije: " + fica.cenaRegistracije());
+        System.out.println("Cena goriva je: " + fica.natociGorivo(5));
+        System.out.println();
     }
 }

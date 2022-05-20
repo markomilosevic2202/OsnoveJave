@@ -13,6 +13,11 @@ public class Auto {
     public boolean klima;
 
     public int brzina;
+    public int godinaProizvodnje;
+    public int mesecRegistracije;
+    public int kubikaza;
+    public int kapacitetRezervuara;
+    public int trenutnaKolicinaGoriva;
 
     public void stampa() {
         System.out.println(this.ime + " " + this.prezime);
@@ -58,5 +63,37 @@ public class Auto {
         return (this.brzina / 100 * potrosnja);
     }
 
+    public boolean oldTimer() {
+        if (1950 > this.godinaProizvodnje) {
+            return true;
+        }
+        return false;
+    }
+
+    public boolean idteklaRegistracija(int tekuciMesec) {
+        if (this.mesecRegistracije < tekuciMesec) {
+            return true;
+        }
+        return false;
+    }
+
+    public double cenaRegistracije() {
+        if (this.kubikaza < 2000) {
+            return this.kubikaza * 100;
+        }
+        return this.kubikaza * 100 * 1.3;
+    }
+
+    public double natociGorivo(int dosipaj) {
+        if ((dosipaj + this.trenutnaKolicinaGoriva) < this.kapacitetRezervuara) {
+            return dosipaj * 170;
+        }
+        return (this.kapacitetRezervuara - this.trenutnaKolicinaGoriva) * 170;
+    }
+
+
 
 }
+
+
+
