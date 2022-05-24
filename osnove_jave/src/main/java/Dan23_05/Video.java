@@ -12,7 +12,7 @@ public class Video {
 
     public Video(int idVideo, String naziv, int duzinaVide, int brLike,
                  int brDislike, int brPregleda) {
-        this.idVideo = idVideo;
+        this.idVideo = idVideo;//logicno mi bilo da id ide kao broj
         this.naziv = naziv;
         this.duzinaVide = duzinaVide;
         this.brLike = brLike;
@@ -21,13 +21,16 @@ public class Video {
     }
 
     private int brPregleda;
-    public void like(){
+
+    public void like() {
         this.brLike++;
     }
-    public void disLike(){
+
+    public void disLike() {
         this.brDislike++;
     }
-    public void pregledaj(){
+
+    public void pregledaj() {
         this.brPregleda++;
     }
 
