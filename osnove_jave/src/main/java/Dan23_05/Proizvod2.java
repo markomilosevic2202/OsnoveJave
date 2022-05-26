@@ -30,13 +30,16 @@ public class Proizvod2 {
     public void setCenaPoKilogramu(double cenaPoKilogramu) {
         this.cenaPoKilogramu = cenaPoKilogramu;
     }
-    public double getCenaKg(){
+
+    public double getCenaKg() {
         return cenaPoKilogramu;
     }
-    public double getCenaLb(){
-       return this.cenaPoKilogramu * 2.2046;
+
+    public double getCenaLb() {
+        return this.cenaPoKilogramu * 2.2046;
     }
-    public void stampa(){
+
+    public void stampa() {
         System.out.println("Sifra: " + this.sifra + " Naziv: " + this.naziv);
 
 

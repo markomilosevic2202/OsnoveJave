@@ -22,21 +22,24 @@ public class Vaga {
     public void setProizvod(Proizvod2 proizvod) {
         this.proizvod = proizvod;
     }
-    public double sracunajCenu(double tezina){
-        if(this.mernaJedinica.equals("lb")){
-        return tezina * this.proizvod.getCenaLb();}
+
+    public double sracunajCenu(double tezina) {
+        if (this.mernaJedinica.equals("lb")) {
+            return tezina * this.proizvod.getCenaLb();
+        }
         return tezina * this.proizvod.getCenaKg();
 
-}
-   public void stampaj(double tezina){
-       proizvod.stampa();
-       if(this.mernaJedinica.equals("lb")){
-       System.out.print("Cena po funti: " + this.proizvod.getCenaLb());}
-       else {
-           System.out.print("Cena po kilogramu: " + this.proizvod.getCenaKg());
+    }
 
-       }
-       System.out.println("  " + this.mernaJedinica+ " x " + tezina);
-       System.out.println("Ukupno: " + this.sracunajCenu(tezina));
-   }
+    public void stampaj(double tezina) {
+        proizvod.stampa();
+        if (this.mernaJedinica.equals("lb")) {
+            System.out.print("Cena po funti: " + this.proizvod.getCenaLb());
+        } else {
+            System.out.print("Cena po kilogramu: " + this.proizvod.getCenaKg());
+
+        }
+        System.out.println("  " + this.mernaJedinica + " x " + tezina);
+        System.out.println("Ukupno: " + this.sracunajCenu(tezina));
+    }
 }
