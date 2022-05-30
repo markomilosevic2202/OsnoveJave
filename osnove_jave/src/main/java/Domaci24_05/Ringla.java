@@ -11,7 +11,8 @@ public class Ringla {
 
     public Ringla(boolean expres, int jacina) {
         this.expres = expres;
-        this.jacina = jacina;
+        this.jacinaGrejaca = jacina;
+        this.jacina = 0;
     }
 
     public int getJacina() {
@@ -43,6 +44,15 @@ public class Ringla {
         else {
             System.out.println("Ne radi");
         }
+        System.out.print("Tip ringle: " );
+        if(this.expres){
+            System.out.println("Expres");
+        }
+        else {
+            System.out.println("Obicna");
+        }
+        System.out.println("Jacina: " + this.jacina);
+        System.out.println("Grejac: " + this.jacinaGrejaca);
     }
 
 }
