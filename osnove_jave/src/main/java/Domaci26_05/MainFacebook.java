@@ -15,7 +15,7 @@ public class MainFacebook {
         post1.dodajReakciju(reakcija3);
         post1.dodajReakciju(reakcija4);
         post1.dodajReakciju(reakcija5);
-        post1.stampa();
+        post1.dodajReakciju(new Reakcija("Like", "Dragan Jovanovic"));
 
 
 
