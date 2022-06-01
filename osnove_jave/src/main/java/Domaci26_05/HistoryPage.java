@@ -59,16 +59,22 @@ public class HistoryPage {
     public String getPass() {
         return pass;
     }
-    public void kredencijale(String userName, String pass){
+
+    public void kredencijale(String userName, String pass) {
         this.userName = userName;
         this.pass = pass;
 
     }
-    public void obrisiKolacice(){
+
+    public void obrisiKolacice() {
         this.userName = null;
         this.pass = null;
     }
-    public void stampaj(){
-        System.out.println(this.satOtvaranja + " : " + this.minutOtvaranja + " " + this.nazivStranice + " " + this.link);
+
+    public void stampaj() {
+        System.out.print(this.satOtvaranja + " : " + this.minutOtvaranja + " " + this.nazivStranice + " " + this.link);
+        if (this.userName != null) {
+            System.out.println("*****");
+        }
     }
 }
