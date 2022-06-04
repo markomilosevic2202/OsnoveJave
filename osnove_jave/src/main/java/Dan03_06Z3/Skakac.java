@@ -7,7 +7,7 @@ public class Skakac extends Atleticar{
 
     @Override
     public boolean bolji(Atleticar a2) {
-        if(this.rezultat > a2.rezultat){
+        if(this.rezultat < a2.rezultat){
             return true;
         }
         else {

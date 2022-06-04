@@ -43,7 +43,7 @@ public class Disciplina {
     }
     private Atleticar najbolji(){
         Atleticar najbolji = this.atleticars.get(0);
-        for (int i = 0; i <= this.atleticars.size(); i++) {
+        for (int i = 0; i < this.atleticars.size(); i++) {
             if(najbolji.bolji(atleticars.get(i))){
                 najbolji = this.atleticars.get(i);
             }

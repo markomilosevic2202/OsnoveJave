@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public abstract class Radnik {
     protected   String imePrezime;
-    protected ArrayList<Sektor> list;
+    protected ArrayList<Sektor> list = new ArrayList<>();
 
     public Radnik(String imePrezime) {
         this.imePrezime = imePrezime;
